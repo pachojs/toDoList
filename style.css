@@ -1,0 +1,151 @@
+:root{
+    --primary-font: font-family: 'Indie Flower', cursive;
+    --Secundary-font: font-family: 'Open Sans', sans-serif;
+    --black: #000000;
+    --gray: #817878;
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--gray), var(--black));
+    height: 100vh
+}    
+
+.inactive {
+    display: none;
+}
+
+/* Estilos iconos  */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+
+.pulse {
+  animation: pulse 3s infinite;
+}
+  
+  @keyframes pulse {
+    0% {
+      font-variation-settings: 'wght' 100;
+    }
+    50% {
+      font-variation-settings: 'wght' 700;
+    }
+    100% {
+      font-variation-settings: 'wght' 100;
+    }
+  }
+
+/* ESTILOS CONTENEDOR TITULO */
+
+#fecha {
+    color: var(--black);
+    padding: 50px 0px 5px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro{
+    display: flex;
+    word-wrap:break-word;
+}
+
+.container {
+    max-width: 90%;
+    width: 80%;
+    height: 15vh;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* botones de categorías */
+.nav-options{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.nav-options li {
+    border:outset 1px var(--gray);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.nav-options li:active {
+    border:inset 1px var(--gray);
+    border-radius: 5px;
+    padding: 4px;
+}
+.nav-options button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+
+/* mensaje de entrada */
+.mensaje-entrada {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* contenedor tareas */
+.contenedor-tareas{
+    border: outset 1px var(--gray);
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* agregar tarea*/
+
+.agregar-tarea{
+    background-color: white;
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    margin: 40px 0;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    padding-left: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+.agregar-tarea span {
+    font-size: 50px;
+    color: var(--black);
+}
+
+.agregar-tarea span:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

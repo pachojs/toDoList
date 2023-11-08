@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <div id="fecha"></div>
+    <div class="container">
+        <div class="title">
+            <div id="fecha"></div>
+            <div class="intro">
+                <h1>Lista de Tareas de</h1>
+                <h1 id="user-name"></h1>
+            </div>
+            <span>¡Vamos a Trabajar!</span>
+        </div> 
+    </div>
+    <nav>
+        <ul class="nav-options">
+            <li id="boton-personales">
+                <button>
+                    <span class="material-symbols-outlined pulse">person</span>
+                    PERSONALES
+                </button>
+            </li>
+            <li id="boton-trabajo">
+                <button>
+                <span class="material-symbols-outlined pulse">Settings</span>
+                TRABAJO
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <!-- iconos -->
+    <div class="pulse">
+        <span class="material-symbols-outlined">search</span>
+        <span class="material-symbols-outlined">Done</span>
+        <span class="material-symbols-outlined">Close</span>
+        <span class="material-symbols-outlined">favorite</span>
+       
+      </div>
+    <div class="mensaje-entrada">
+        <p>Elige una categoría de tareas</p>
+    </div>
+    <section class="contenedor-tareas personales inactive">
+        <h1>Tareas personales</h1>
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Nueva tarea">
+            <div class="pulse">
+                <span class="material-symbols-outlined">Add</span>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor-tareas trabajo inactive">
+        <h1>Tareas del trabajo</h1>
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Nueva tarea">
+            <span class="material-symbols-outlined">Add</span>
+        </div>
+    </section>
+
+<script src="./main.js"></script>
+</body>
+</html>
