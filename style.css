@@ -86,6 +86,7 @@ body{
     border:outset 1px var(--gray);
     border-radius: 5px;
     padding: 4px;
+    cursor: pointer;
 }
 
 .nav-options li:active {
@@ -98,6 +99,8 @@ body{
     border: none;
     text-decoration: none;
     color: white;
+    cursor: pointer;
+
 }
 
 /* mensaje de entrada */
@@ -148,4 +151,41 @@ body{
 .agregar-tarea span:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/*--SECCION DE TAREAS--*/
+.seccion-tareas h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.seccion-tareas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+    
+}
+
+.seccion-tareas i{
+    font-size: 25px;
+}
+
+.seccion-tareas > ul p{
+    font-size: 1.2rem;
+    
+}
+
+.seccion-tareas i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.line-throught{
+    text-decoration: line-through;
+    color: white;
 }
